@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import QuoteData from "./quotes.json";
 
 class QuoteDetail extends Component {
     render() {
