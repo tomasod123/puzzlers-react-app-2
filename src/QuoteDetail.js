@@ -1,7 +1,13 @@
-import React, { Component, useState } from "react";
+import React, { useState } from "react";
 
 
 const QuoteDetail = (quote) => {
+    const [count, setCount] = useState(4);
+
+    function decrementCount() {
+        setCount(count - 1)
+    }
+
     return (
 
         <div className="App Flexbox-container">
@@ -17,9 +23,9 @@ const QuoteDetail = (quote) => {
             </div>
 
             <div className="TextComponent Flexbox-item-2">
-                <button className="PlusButton">+</button>
+                <button className="PlusButton" onClick={decrementCount}>+</button>
                 {/* <span>{quote.votes}</span> */}
-                <span>0</span>
+                <span>{count}</span>
                 <button className="MinusButton">-</button>
             </div>
         </div>
