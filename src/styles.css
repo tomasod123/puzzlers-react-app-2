@@ -14,16 +14,10 @@
   }
   
   .Flexbox-container {
-    margin-bottom: 10px;
+    margin-top: 10px;
     display: flex;
   }
-  
-  .Flexbox-item-1 {
-  }
-  
-  .Flexbox-item-2 {
-  }
-  
+
   .Source {
     margin-top: 10px;
     color: #818181;

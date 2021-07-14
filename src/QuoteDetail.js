@@ -18,7 +18,8 @@ class QuoteDetail extends Component {
 
                 <div className="TextComponent Flexbox-item-2">
                     <button className="PlusButton">+</button>
-                    <span>{quote.votes}</span>
+                    {/* <span>{quote.votes}</span> */}
+                    <span>0</span>
                     <button className="MinusButton">-</button>
                 </div>
             </div>
