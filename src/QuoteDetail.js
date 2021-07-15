@@ -5,7 +5,11 @@ const QuoteDetail = (quote) => {
     const [count, setCount] = useState(4);
 
     function decrementCount() {
-        setCount(count - 1)
+        setCount(prevCount => prevCount - 1)
+    }
+
+    function incrementCount() {
+        setCount(prevCount => prevCount + 1)
     }
 
     return (
@@ -23,10 +27,10 @@ const QuoteDetail = (quote) => {
             </div>
 
             <div className="TextComponent Flexbox-item-2">
-                <button className="PlusButton" onClick={decrementCount}>+</button>
+                <button className="PlusButton" onClick={incrementCount}>+</button>
                 {/* <span>{quote.votes}</span> */}
                 <span>{count}</span>
-                <button className="MinusButton">-</button>
+                <button className="MinusButton" onClick={decrementCount}>-</button>
             </div>
         </div>
     );
