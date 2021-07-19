@@ -2,28 +2,66 @@
 * {
     padding: 0;
     margin: 0;
+
   }
   
   .App {
     font-family: sans-serif;
     width: 80%;
     margin: auto;
-    border: solid black 2px;
-    border-radius: 3px;
+    border: solid hsl(217, 96%, 21%) 2px;
+    border-radius: 5px;
     padding: 15px;
+  }
+
+ 
+
+  .quoteText {
+    font-style: italic;
+    font-weight: 500;
+    color: #f7f7f7;
   }
   
   .Flexbox-container {
     margin-top: 10px;
     display: flex;
-  }
-
-  .Source {
-    margin-top: 10px;
-    color: #818181;
+    flex-direction: column;
+    width:66%;
+    justify-content: center;
+    /* background-color: #345BD4; */
+    background-image: linear-gradient(120deg, #4b6fdb,#1a3aa1);
   }
   
   .Years {
     font-size: 66%;
+        color:  #f7f7f7;
+  }
+
+  .Source {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 80%;
+    color:  #f7f7f7;
+    font-weight: 200 !important;
+  }
+
+  .count {
+    color: #d6d6d6;
+    padding: 5px
   }
   
+  button {
+    background-color: #f7f7f7;
+    color: #070707;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 3px;
+    border: 0px solid #f7f7f7;
+    margin: 5px;
+  }
+
+  button:hover {
+    background-color: #e08c43;
+    color: #f7f7f7
+
+  }
