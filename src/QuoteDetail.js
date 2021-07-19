@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 
 
-const QuoteDetail = (quote) => {
-    const [count, setCount] = useState(4);
+const QuoteDetail = (props) => {
+    const { quote, name } = props
+    const [count, setCount] = useState(quote.votes);
 
     function decrementCount() {
         setCount(prevCount => prevCount - 1)
