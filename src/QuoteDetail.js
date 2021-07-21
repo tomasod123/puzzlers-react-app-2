@@ -10,7 +10,7 @@ const QuoteDetail = (props) => {
     //Changing the state in a component will rerender that component
     function decrementCount() {
 
-        if (count >= 0) { setCount(prevCount => prevCount - 1); }
+        if (count >= 1) { setCount(prevCount => prevCount - 1); }
 
     }
     function incrementCount() {
